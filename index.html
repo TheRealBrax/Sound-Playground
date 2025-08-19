@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sound Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎵 Sound Playground 🎵</h1>
+  <p style="font-size:1.2em; margin-bottom: 10px;">by Braxton</p>
+
+<div class="toolbar">
+  <div class="instrument" draggable="true" data-sound="kick" data-img="images/kick.png">
+    <img src="images/kick.png" alt="Kick" width="40">
+  </div>
+  <div class="instrument" draggable="true" data-sound="snare" data-img="images/snare.png">
+    <img src="images/snare.png" alt="Snare" width="40">
+  </div>
+  <div class="instrument" draggable="true" data-sound="hihat" data-img="images/hihat.png">
+    <img src="images/hihat.png" alt="Hi-Hat" width="40">
+  </div>
+</div>
+
+
+<div id="timeline" class="timeline">
+  <!-- Row 1 -->
+  <div class="row">
+    <div class="slot" data-row="0" data-col="0"><div class="playhead"></div></div>
+    <div class="slot" data-row="0" data-col="1"><div class="playhead"></div></div>
+    <div class="slot" data-row="0" data-col="2"><div class="playhead"></div></div>
+    <div class="slot" data-row="0" data-col="3"><div class="playhead"></div></div>
+  </div>
+  <!-- Row 2 -->
+  <div class="row">
+    <div class="slot" data-row="1" data-col="0"><div class="playhead"></div></div>
+    <div class="slot" data-row="1" data-col="1"><div class="playhead"></div></div>
+    <div class="slot" data-row="1" data-col="2"><div class="playhead"></div></div>
+    <div class="slot" data-row="1" data-col="3"><div class="playhead"></div></div>
+  </div>
+  <!-- Row 3 -->
+  <div class="row">
+    <div class="slot" data-row="2" data-col="0"><div class="playhead"></div></div>
+    <div class="slot" data-row="2" data-col="1"><div class="playhead"></div></div>
+    <div class="slot" data-row="2" data-col="2"><div class="playhead"></div></div>
+    <div class="slot" data-row="2" data-col="3"><div class="playhead"></div></div>
+  </div>
+</div>
+</div>
+  <button id="addColBtn">➕</button>
+<button id="playBtn">▶ Play</button>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+body {
+  font-family: 'Comic Sans MS', sans-serif;
+  text-align: center;
+  background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+  margin: 0;
+  padding: 20px;
+}
+
+.toolbar {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.instrument {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: #fff;
+  cursor: grab;
+  font-weight: bold;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.slot {
+  width: 60px;
+  height: 60px;
+  background: #eee;
+  border-radius: 8px;
+  border: 2px dashed #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.slot .instrument {
+  position: relative;
+  font-size: 12px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  background: #fff;
+  cursor: grab;
+}
+.timeline-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#addColBtn {
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  background: #fff;
+  border: 2px solid #ccc;
+}
+
+#addColBtn:hover {
+  background: #ffd700;
+}
+
+.playhead {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: yellow;
+  opacity: 0;
+  border-radius: 8px 8px 0 0;
+  z-index: 2;
+}
